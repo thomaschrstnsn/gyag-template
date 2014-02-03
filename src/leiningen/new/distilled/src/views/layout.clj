@@ -6,7 +6,7 @@
   [:div.navbar.navbar-static-top.navbar-default
    [:a.navbar-brand {:href "/"} "{{capitalized}}"]
    [:ul.nav.navbar-nav.pull-left
-    [:li#nav-api (link-to "/api" "API")]]])
+    [:li#nav-api (link-to "/api/example" "API")]]])
 
 (defn footer [{:keys [cljs-repl-script-fn cljs-optimized?]}]
   (list
