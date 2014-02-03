@@ -24,6 +24,10 @@
              ["src/{{sanitized}}/views/layout.clj" (render "src/views/layout.clj" data)]
              ["src/{{sanitized}}/views/home.clj" (render "src/views/home.clj" data)]
 
+             ["resources/public/css/bootstrap.min.css" (render "resources/bootstrap.min.css")]
+             ["resources/public/js/bootstrap.min.js" (render "resources/bootstrap.min.js")]
+             ["resources/public/js/jquery.min.js" (render "resources/jquery.min.js")]
+
              ["dev/user.clj" (render "dev/user.clj" data)]
              ["dev/dev_cljs_repl.clj" (render "dev/dev_cljs_repl.clj")]
              ["project.clj" (render "project.clj" data)])))
