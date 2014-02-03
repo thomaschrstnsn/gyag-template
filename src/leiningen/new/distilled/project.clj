@@ -5,6 +5,7 @@
                  [compojure "1.1.5" :exclusions [org.clojure/tools.macro
                                                  org.clojure/core.incubator
                                                  ring/ring-core]]
+                 [liberator "0.10.0"]
                  [ring-server "0.3.0" :exclusions [org.clojure/core.incubator]]
                  [com.taoensso/timbre "2.7.1"]
                  [log4j "1.2.17" :exclusions [javax.mail/mail
