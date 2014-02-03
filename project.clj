@@ -1,4 +1,4 @@
-(defproject gyag/lein-template "0.1.0-SNAPSHOT"
+(defproject gyag/lein-template "0.1.0"
   :description "Opinionated template for creating web applications in Clojure using ClojureScript and Ring"
   :url "http://github.com/thomaschrstnsn/gyag"
   :license {:name "Eclipse Public License"
