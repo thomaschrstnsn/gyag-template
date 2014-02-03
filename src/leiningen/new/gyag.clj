@@ -1,17 +1,17 @@
-(ns leiningen.new.distilled
+(ns leiningen.new.gyag
   (:require [leiningen.new.templates :refer [renderer name-to-path ->files]]
             [leiningen.core.main :as main]
             [clojure.string :as str]))
 
-(def render (renderer "distilled"))
+(def render (renderer "gyag"))
 
-(defn distilled
+(defn gyag
   [name]
   (let [data {:name          name
               :sanitized     (name-to-path name)
               :capitalized   (str/capitalize name)
               :system-record (str/capitalize name)}]
-    (main/info "Generating fresh 'lein new' distilled project.")
+    (main/info "Generating fresh 'lein new' gyag project.")
     (->files data
              ["src/{{sanitized}}/system.clj" (render "src/system.clj" data)]
              ["src/{{sanitized}}/app.clj" (render "src/app.clj" data)]
