@@ -18,7 +18,7 @@
      (apply include-js scripts))
    (when-not cljs-optimized?
      [:script {:type "text/javascript"} "goog.require(\"{{name}}.browser\");"])
-   [:script {:type "text/javascript"} "{{name}}.browser.register_document_ready();"]
+   [:script {:type "text/javascript"} "{{name}}.browser.clojurescript_main();"]
    (cljs-repl-script-fn)))
 
 (defn base [config-options & content]
