@@ -25,7 +25,6 @@
   (html5
    [:head
     [:title "{{capitalized}}"]
-    [:link {:rel "icon" :type "image/x-icon" :href "/favicon.ico"}]
     (include-css "/css/bootstrap.min.css")]
    [:body content]))
 
