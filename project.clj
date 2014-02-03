@@ -3,4 +3,5 @@
   :url "http://github.com/thomaschrstnsn/gyag"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
+  :lein-release {:deploy-via :clojars}
   :eval-in-leiningen true)
