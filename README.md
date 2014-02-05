@@ -24,7 +24,7 @@ The project uses the excellent `component` and `tools.nrepl` libraries to enable
 code reloads. See [component on github](https://www.github.com/stuartsierra/component/) and
 [REPL-driven development workflow](http://thinkrelevance.com/blog/2013/06/04/clojure-workflow-reloaded).
 
-See the following example:
+#### Example:
 
 * Start a nRepl for your project, eg. `M-x nrepl-jack-in` in emacs or `lein repl` from the command-line
 * In the start the server-side: `(go)` which should produce something similar to this:
@@ -39,16 +39,16 @@ See the following example:
 :ok
 ```
 * The server-side is split into multiple components, which is what is logged out in the above:
-* * The app: Ring handler and route compositions
-* * The web-server: a Jetty-instance serving the app on HTTP
-* * The in-app hosted REPL: live code changes everywhere, whats not to like? (*caveat emptor*)
+ * The app: Ring handler and route compositions
+ * The web-server: a Jetty-instance serving the app on HTTP
+ * The in-app hosted REPL: live code changes everywhere, whats not to like? (*caveat emptor*)
 * You can now open [localhost](http://localhost:8080) to connect to your running application.
 * During development, to reload code changes, perform the following in the REPL which launched
 to app: `(user/reset)`. This performs the following steps:
-* * Stops the currently running components, releasing acquired resources (ports etc)
-* * Uses `tools.nrepl` to reload code under `src/`
-* * Restarts the components
-* * *NOTE:* In the case of problems reloading code, eg. compilation errors, first resolve these
+ * Stops the currently running components, releasing acquired resources (ports etc)
+ * Uses `tools.nrepl` to reload code under `src/`
+ * Restarts the components
+ * *NOTE:* In the case of problems reloading code, eg. compilation errors, first resolve these
 and then perform `(clojure.tools.namespace.repl/refresh)` followed by `(user/reset)`
 
 ## License
