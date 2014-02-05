@@ -34,4 +34,6 @@
 
              ["dev/user.clj" (render "dev/user.clj" data)]
              ["dev/dev_cljs_repl.clj" (render "dev/dev_cljs_repl.clj")]
+
+             [".gitignore" (render "gitignore" data)]
              ["project.clj" (render "project.clj" data)])))
